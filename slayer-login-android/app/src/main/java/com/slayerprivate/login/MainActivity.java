@@ -1,6 +1,7 @@
 package com.slayerprivate.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -184,6 +185,10 @@ public final class MainActivity extends Activity {
                 creating ? "Đã có tài khoản? Đăng nhập"
                          : "Chưa có tài khoản? Đăng ký", false);
         page.addView(other, layoutParams(12));
+        Button online = button("ĐĂNG NHẬP SERVER (V2)", false);
+        page.addView(online, layoutParams(16));
+        online.setOnClickListener(v -> startActivity(
+                new Intent(this, RemoteAuthActivity.class)));
 
         TextView warning = text(
                 "Tài khoản chỉ lưu trên điện thoại này. " +
