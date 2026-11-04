@@ -1,0 +1,26 @@
+name: Publish Slayer Login APK
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-slayer-login-apk.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Download built APK
+        run: |
+          gh run download 41819209137 --repo "$GITHUB_REPOSITORY" --name slayer-login-debug-apk --dir dist
+          test -s dist/app-debug.apk
+      - name: Release APK
+        run: |
+          gh release create slayer-login-local-v1 dist/app-debug.apk --repo "$GITHUB_REPOSITORY" --target slayer-login-apk-v1 --title "Slayer Login Demo v1 (offline standalone)" --notes "Android debug APK for local register/login/logout. Not a modified Slayer Legend game; no backend or LIAPP removal." --prerelease
