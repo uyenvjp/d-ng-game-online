@@ -1,0 +1,71 @@
+name: Build and publish Slayer Login V2 APK
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/build-slayer-login-v2-apk.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout V2 Android + Backend source
+        uses: actions/checkout@v4
+        with:
+          ref: slayer-login-apk-v1
+
+      - name: Set up Node 24 for backend tests
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Test Node SQLite backend
+        run: node --test slayer-login-android/backend/test/server.test.mjs
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Android SDK 35
+        run: |
+          SDK_MANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          test -n "$SDK_MANAGER"
+          yes | "$SDK_MANAGER" --licenses >/dev/null || true
+          "$SDK_MANAGER" --install "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Setup Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+
+      - name: Assemble debug APK
+        working-directory: slayer-login-android
+        run: gradle :app:assembleDebug --no-daemon --stacktrace
+
+      - name: Save APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slayer-login-v2-apk
+          path: slayer-login-android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Publish APK GitHub Release
+        run: |
+          mkdir -p dist
+          cp slayer-login-android/app/build/outputs/apk/debug/app-debug.apk dist/slayer-login-v2.apk
+          gh release create slayer-login-v2 dist/slayer-login-v2.apk \
+            --repo "$GITHUB_REPOSITORY" \
+            --target slayer-login-apk-v1 \
+            --title "Slayer Login V2 - standalone offline and optional backend" \
+            --notes "APK debug supports local account mode and an optional private HTTPS Node/SQLite backend login. Backend is not deployed. This is NOT the original Slayer Legend client and does not remove LIAPP. If V1 was installed with another debug signing key, uninstall V1 before installing V2." \
+            --prerelease
