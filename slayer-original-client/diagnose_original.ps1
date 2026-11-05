@@ -37,23 +37,23 @@ if (-not $SkipAdb) {
 
     # Only permit minimal Unity event names, never token/JWT, email, IDs or raw log lines.
     $patterns = @(
-      'Unity\s+: Button_TapToStart\s*
-      'Unity\s+: lookup [a-z0-9.-]+\s*$",
-      'Unity\s+: server address https://[a-z0-9.-]+\s*$",
-      'Unity\s+: IFix Patch result : (?:True|False)\s*$",
-      'Unity\s+: OnConnected\s*$",
-      'Unity\s+: BigIntegerCurrency type \[None\] not found\.\s*
-      'Unity\s+: SignManager:LoginResult_Func\(LoginResponse\)\s*
-      'Unity\s+: UserInfoLoad:Load\(UserInfo, Action`1\)\s*
-      'Unity\s+: Network\.<ValidateAuthAsyncV3>d__35:MoveNext\(\)\s*
-      'Unity\s+: SceneBase::DestroyScene => SceneTitle_[0-9,.]+\s*
+      'Unity\s+: Button_TapToStart\s*$',
+      'Unity\s+: lookup [a-z0-9.-]+\s*$',
+      'Unity\s+: server address https://[a-z0-9.-]+\s*$',
+      'Unity\s+: IFix Patch result : (?:True|False)\s*$',
+      'Unity\s+: OnConnected\s*$',
+      'Unity\s+: BigIntegerCurrency type \[None\] not found\.\s*$',
+      'Unity\s+: SignManager:LoginResult_Func\(LoginResponse\)\s*$',
+      'Unity\s+: UserInfoLoad:Load\(UserInfo, Action`1\)\s*$',
+      'Unity\s+: Network\.<ValidateAuthAsyncV3>d__35:MoveNext\(\)\s*$',
+      'Unity\s+: SceneBase::DestroyScene => SceneTitle_[0-9,.]+\s*$'
     )
     $raw = & $adb -s $Serial logcat -d -v time -s Unity:V "*:S"
     foreach ($line in $raw) {
         foreach ($regex in $patterns) {
             if ($line -match $regex) {
                 $time = if ($line -match "^(\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)") { $Matches[1] } else { "unknown" }
-                $event = ($line -split 'Unity\s+:", 2)[-1].Trim()
+                $event = ($line -split 'Unity\s+:', 2)[-1].Trim()
                 $report.Events += [ordered]@{ Time=$time; Event=$event }
                 break
             }
