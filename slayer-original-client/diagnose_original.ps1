@@ -60,7 +60,8 @@ if (-not $SkipAdb) {
         }
     }
 }
-$xapk = Join-Path $env:USERPROFILE "Downloads\Slayer+Legend+_+Idle+RPG_700.0.4_APKPure.xapk"
+$homePath = if ($env:USERPROFILE) { $env:USERPROFILE } else { $HOME }
+$xapk = Join-Path $homePath "Downloads\Slayer+Legend+_+Idle+RPG_700.0.4_APKPure.xapk"
 if (Test-Path -LiteralPath $xapk) {
     $report.OriginalXapkSha256 = (Get-FileHash -LiteralPath $xapk -Algorithm SHA256).Hash.ToLowerInvariant()
     $report.MatchesStaticResearch = ($report.OriginalXapkSha256 -eq "b8c19d5fdf4da70c8c45cddf3f7e6b8a850863fd55b09b087c6d06d7001d6098")
