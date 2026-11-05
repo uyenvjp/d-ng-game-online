@@ -1,0 +1,25 @@
+name: Validate original Slayer client probe
+on:
+  push:
+    branches:
+      - slayer-original-client-auth
+    paths:
+      - 'slayer-original-client/**'
+      - '.github/workflows/check-slayer-original-client-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-powershell:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify script parses and writes non-game test report
+        shell: pwsh
+        run: |
+          ./slayer-original-client/diagnose_original.ps1 -SkipAdb -OutputDir "$env:RUNNER_TEMP/slayer-check"
+          $r = Get-Content "$env:RUNNER_TEMP/slayer-check/auth_trace_sanitized.json" -Raw | ConvertFrom-Json
+          if ($r.ClientModified -ne $false -or $r.OriginalApkBuilt -ne $false) { throw "Invalid status flags" }
+          if ($r.GamePackage -ne "com.gear2.growslayer") { throw "Invalid package" }
+          Write-Host "Original-client probe syntax and JSON smoke test passed"
