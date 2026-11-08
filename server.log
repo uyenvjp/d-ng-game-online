@@ -1,0 +1,26 @@
+============================================================
+Dungeon Corporation - Mock Server
+Replacing: https://notice.bigshot-games.xyz/
+============================================================
+
+To redirect game:
+1. Add to C:\Windows\System32\drivers\etc\hosts:
+   127.0.0.1 notice.bigshot-games.xyz
+   127.0.0.1 bigshot-games.xyz
+
+2. Or use APK patching to change WebAccess.Adress
+
+Starting server on http://127.0.0.1:443 (HTTPS port)
+============================================================
+ * Serving Flask app 'mock_server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.10.102:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 131-090-313
+127.0.0.1 - - [07/Nov/2026 23:52:51] "GET /timestamp HTTP/1.1" 200 -
+127.0.0.1 - - [07/Nov/2026 23:53:03] "GET /timestamp HTTP/1.1" 200 -
