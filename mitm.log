@@ -1,0 +1,273 @@
+[22:00:21.657] Loading script C:/Users/okokok/Desktop/dungeon-re/server/mitm_addon.py
+[22:00:21.660] HTTP(S) proxy listening at *:8088.
+[22:00:26.932][127.0.0.1:61714] client connect
+[22:00:26.937] [INTERCEPT] GET http://notice.bigshot-games.xyz/timestamp -> mock (151 bytes)
+127.0.0.1:61714: GET http://notice.bigshot-games.xyz/timestamp
+              << 200 OK 151b
+[22:00:26.938][127.0.0.1:61714] client disconnect
+[22:01:04.659][127.0.0.1:61751] client connect
+[22:01:04.750][127.0.0.1:61751] server connect android.googleapis.com:443 (172.217.116.4:443)
+[22:01:04.900][127.0.0.1:61753] client connect
+[22:01:04.963][127.0.0.1:61753] server connect bzr.openai.com:443 (172.64.151.22:443)
+[22:01:05.025][127.0.0.1:61751] Client TLS handshake failed. The client does not trust the proxy's certificate for android.googleapis.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:05.026][127.0.0.1:61751] client disconnect
+[22:01:05.026][127.0.0.1:61751] server disconnect android.googleapis.com:443 (172.217.116.4:443)
+[22:01:05.060][127.0.0.1:61753] Client TLS handshake failed. The client does not trust the proxy's certificate for bzr.openai.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:05.061][127.0.0.1:61753] client disconnect
+[22:01:05.062][127.0.0.1:61753] server disconnect bzr.openai.com:443 (172.64.151.22:443)
+[22:01:06.405][127.0.0.1:61756] client connect
+[22:01:06.473][127.0.0.1:61756] server connect pixel.quantserve.com:443 (103.229.10.180:443)
+[22:01:06.971][127.0.0.1:61756] Client TLS handshake failed. The client does not trust the proxy's certificate for pixel.quantserve.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:06.972][127.0.0.1:61756] client disconnect
+[22:01:06.973][127.0.0.1:61756] server disconnect pixel.quantserve.com:443 (103.229.10.180:443)
+[22:01:10.442][127.0.0.1:61763] client connect
+[22:01:10.509][127.0.0.1:61763] server connect config.uca.cloud.unity3d.com:443 (34.111.113.40:443)
+[22:01:20.563][127.0.0.1:61763] Server TLS handshake failed. connection closed
+[22:01:20.564][127.0.0.1:61763] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:20.565][127.0.0.1:61763] server disconnect config.uca.cloud.unity3d.com:443 (34.111.113.40:443)
+[22:01:20.738][127.0.0.1:61763] Client TLS handshake failed. The client may not trust the proxy's certificate for config.uca.cloud.unity3d.com (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:20.739][127.0.0.1:61763] client disconnect
+[22:01:22.096][127.0.0.1:61772] client connect
+[22:01:22.334][127.0.0.1:61772] server connect legendaryitem.bigshot-games.xyz:443 (13.248.169.48:443)
+[22:01:22.754][127.0.0.1:61772] Server TLS handshake failed. OpenSSL Error([('SSL routines', '', 'tlsv1 unrecognized name')])
+[22:01:22.755][127.0.0.1:61772] Unable to establish TLS connection with server (OpenSSL Error([('SSL routines', '', 'tlsv1 unrecognized name')])). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:22.758][127.0.0.1:61772] server disconnect legendaryitem.bigshot-games.xyz:443 (13.248.169.48:443)
+[22:01:22.773][127.0.0.1:61772] Client TLS handshake failed. The client may not trust the proxy's certificate for legendaryitem.bigshot-games.xyz (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:22.774][127.0.0.1:61772] client disconnect
+[22:01:25.072][127.0.0.1:61774] client connect
+[22:01:25.164][127.0.0.1:61774] server connect googleads.g.doubleclick.net:443 (74.125.24.154:443)
+[22:01:25.540][127.0.0.1:61776] client connect
+[22:01:25.603][127.0.0.1:61776] server connect googleads.g.doubleclick.net:443 (74.125.24.154:443)
+[22:01:25.649][127.0.0.1:61774] Client TLS handshake failed. The client does not trust the proxy's certificate for googleads.g.doubleclick.net (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:25.650][127.0.0.1:61774] client disconnect
+[22:01:25.650][127.0.0.1:61774] server disconnect googleads.g.doubleclick.net:443 (74.125.24.154:443)
+[22:01:25.737][127.0.0.1:61776] Client TLS handshake failed. The client does not trust the proxy's certificate for googleads.g.doubleclick.net (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:25.738][127.0.0.1:61776] client disconnect
+[22:01:25.738][127.0.0.1:61776] server disconnect googleads.g.doubleclick.net:443 (74.125.24.154:443)
+[22:01:26.857][127.0.0.1:61779] client connect
+[22:01:26.923][127.0.0.1:61779] server connect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:27.475][127.0.0.1:61781] client connect
+[22:01:27.517][127.0.0.1:61783] client connect
+[22:01:27.518][127.0.0.1:61784] client connect
+[22:01:27.531][127.0.0.1:61785] client connect
+[22:01:27.609][127.0.0.1:61781] server connect legendaryitem.bigshot-games.xyz:443 (13.248.169.48:443)
+[22:01:27.644][127.0.0.1:61785] server connect mediation-instantiation.unityads.unity3d.com:443 (34.96.122.89:443)
+[22:01:27.685][127.0.0.1:61783] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.698][127.0.0.1:61785] Server TLS handshake failed. connection closed
+[22:01:27.699][127.0.0.1:61785] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.700][127.0.0.1:61785] server disconnect mediation-instantiation.unityads.unity3d.com:443 (34.96.122.89:443)
+[22:01:27.707][127.0.0.1:61785] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-instantiation.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.707][127.0.0.1:61784] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.708][127.0.0.1:61785] client disconnect
+[22:01:27.720][127.0.0.1:61789] client connect
+[22:01:27.721][127.0.0.1:61790] client connect
+[22:01:27.729][127.0.0.1:61793] client connect
+[22:01:27.733][127.0.0.1:61783] Server TLS handshake failed. connection closed
+[22:01:27.734][127.0.0.1:61783] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.735][127.0.0.1:61783] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.744][127.0.0.1:61783] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.745][127.0.0.1:61783] client disconnect
+[22:01:27.748][127.0.0.1:61781] Server TLS handshake failed. OpenSSL Error([('SSL routines', '', 'tlsv1 unrecognized name')])
+[22:01:27.749][127.0.0.1:61781] Unable to establish TLS connection with server (OpenSSL Error([('SSL routines', '', 'tlsv1 unrecognized name')])). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.750][127.0.0.1:61795] client connect
+[22:01:27.754][127.0.0.1:61781] server disconnect legendaryitem.bigshot-games.xyz:443 (13.248.169.48:443)
+[22:01:27.758][127.0.0.1:61781] Client TLS handshake failed. The client may not trust the proxy's certificate for legendaryitem.bigshot-games.xyz (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:27.758][127.0.0.1:61781] client disconnect
+[22:01:27.770][127.0.0.1:61784] Server TLS handshake failed. connection closed
+[22:01:27.770][127.0.0.1:61784] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.771][127.0.0.1:61784] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.777][127.0.0.1:61789] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.778][127.0.0.1:61784] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.779][127.0.0.1:61784] client disconnect
+[22:01:27.786][127.0.0.1:61793] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.787][127.0.0.1:61797] client connect
+[22:01:27.792][127.0.0.1:61790] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.823][127.0.0.1:61795] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.825][127.0.0.1:61789] Server TLS handshake failed. connection closed
+[22:01:27.826][127.0.0.1:61789] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.826][127.0.0.1:61789] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.832][127.0.0.1:61789] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.833][127.0.0.1:61789] client disconnect
+[22:01:27.839][127.0.0.1:61793] Server TLS handshake failed. connection closed
+[22:01:27.839][127.0.0.1:61793] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.840][127.0.0.1:61793] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.844][127.0.0.1:61797] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.847][127.0.0.1:61793] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.848][127.0.0.1:61793] client disconnect
+[22:01:27.855][127.0.0.1:61790] Server TLS handshake failed. connection closed
+[22:01:27.855][127.0.0.1:61790] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.856][127.0.0.1:61790] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.863][127.0.0.1:61790] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.864][127.0.0.1:61790] client disconnect
+[22:01:27.868][127.0.0.1:61799] client connect
+[22:01:27.885][127.0.0.1:61795] Server TLS handshake failed. connection closed
+[22:01:27.886][127.0.0.1:61795] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.886][127.0.0.1:61795] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.888][127.0.0.1:61797] Server TLS handshake failed. connection closed
+[22:01:27.888][127.0.0.1:61797] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.889][127.0.0.1:61797] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.895][127.0.0.1:61795] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.896][127.0.0.1:61795] client disconnect
+[22:01:27.897][127.0.0.1:61797] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:27.897][127.0.0.1:61797] client disconnect
+[22:01:27.927][127.0.0.1:61799] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.983][127.0.0.1:61799] Server TLS handshake failed. connection closed
+[22:01:27.984][127.0.0.1:61799] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:27.984][127.0.0.1:61799] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:27.999][127.0.0.1:61799] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:28.000][127.0.0.1:61799] client disconnect
+[22:01:29.784][127.0.0.1:61801] client connect
+[22:01:29.844][127.0.0.1:61801] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:29.866][127.0.0.1:61803] client connect
+[22:01:29.897][127.0.0.1:61801] Server TLS handshake failed. connection closed
+[22:01:29.897][127.0.0.1:61801] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:29.898][127.0.0.1:61801] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:29.904][127.0.0.1:61801] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:29.904][127.0.0.1:61801] client disconnect
+[22:01:29.910][127.0.0.1:61805] client connect
+[22:01:29.924][127.0.0.1:61803] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:29.966][127.0.0.1:61805] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:29.978][127.0.0.1:61803] Server TLS handshake failed. connection closed
+[22:01:29.979][127.0.0.1:61803] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:29.979][127.0.0.1:61803] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:29.998][127.0.0.1:61803] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:29.998][127.0.0.1:61803] client disconnect
+[22:01:30.016][127.0.0.1:61805] Server TLS handshake failed. connection closed
+[22:01:30.016][127.0.0.1:61805] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:30.017][127.0.0.1:61805] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:30.025][127.0.0.1:61811] client connect
+[22:01:30.039][127.0.0.1:61805] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:30.040][127.0.0.1:61805] client disconnect
+[22:01:30.096][127.0.0.1:61811] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:30.149][127.0.0.1:61811] Server TLS handshake failed. connection closed
+[22:01:30.149][127.0.0.1:61811] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:30.150][127.0.0.1:61811] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:30.177][127.0.0.1:61811] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:30.178][127.0.0.1:61811] client disconnect
+[22:01:33.909][127.0.0.1:61815] client connect
+[22:01:33.983][127.0.0.1:61815] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.005][127.0.0.1:61817] client connect
+[22:01:34.047][127.0.0.1:61815] Server TLS handshake failed. connection closed
+[22:01:34.048][127.0.0.1:61815] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:34.048][127.0.0.1:61815] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.057][127.0.0.1:61815] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:34.058][127.0.0.1:61815] client disconnect
+[22:01:34.067][127.0.0.1:61819] client connect
+[22:01:34.067][127.0.0.1:61817] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.123][127.0.0.1:61819] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.124][127.0.0.1:61817] Server TLS handshake failed. connection closed
+[22:01:34.124][127.0.0.1:61817] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:34.125][127.0.0.1:61817] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.135][127.0.0.1:61817] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:34.135][127.0.0.1:61817] client disconnect
+[22:01:34.138][127.0.0.1:61821] client connect
+[22:01:34.174][127.0.0.1:61819] Server TLS handshake failed. connection closed
+[22:01:34.174][127.0.0.1:61819] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:34.175][127.0.0.1:61819] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.183][127.0.0.1:61819] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:34.184][127.0.0.1:61819] client disconnect
+[22:01:34.201][127.0.0.1:61821] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.259][127.0.0.1:61821] Server TLS handshake failed. connection closed
+[22:01:34.259][127.0.0.1:61821] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:34.260][127.0.0.1:61821] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:34.266][127.0.0.1:61821] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:34.266][127.0.0.1:61821] client disconnect
+[22:01:36.969][127.0.0.1:61779] Server TLS handshake failed. connection closed
+[22:01:36.970][127.0.0.1:61779] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:36.971][127.0.0.1:61779] server disconnect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:37.007][127.0.0.1:61779] Client TLS handshake failed. The client may not trust the proxy's certificate for cdp.cloud.unity3d.com (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:37.007][127.0.0.1:61779] client disconnect
+[22:01:37.256][127.0.0.1:61824] client connect
+[22:01:37.325][127.0.0.1:61824] server connect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:42.064][127.0.0.1:61831] client connect
+[22:01:42.134][127.0.0.1:61831] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.139][127.0.0.1:61833] client connect
+[22:01:42.199][127.0.0.1:61831] Server TLS handshake failed. connection closed
+[22:01:42.200][127.0.0.1:61831] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:42.200][127.0.0.1:61831] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.203][127.0.0.1:61833] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.206][127.0.0.1:61831] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:42.207][127.0.0.1:61831] client disconnect
+[22:01:42.216][127.0.0.1:61836] client connect
+[22:01:42.256][127.0.0.1:61833] Server TLS handshake failed. connection closed
+[22:01:42.257][127.0.0.1:61833] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:42.257][127.0.0.1:61833] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.266][127.0.0.1:61833] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:42.266][127.0.0.1:61833] client disconnect
+[22:01:42.273][127.0.0.1:61838] client connect
+[22:01:42.275][127.0.0.1:61836] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.332][127.0.0.1:61836] Server TLS handshake failed. connection closed
+[22:01:42.333][127.0.0.1:61836] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:42.334][127.0.0.1:61836] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.336][127.0.0.1:61838] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.343][127.0.0.1:61836] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:42.344][127.0.0.1:61836] client disconnect
+[22:01:42.392][127.0.0.1:61838] Server TLS handshake failed. connection closed
+[22:01:42.393][127.0.0.1:61838] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:42.394][127.0.0.1:61838] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:42.399][127.0.0.1:61838] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:42.399][127.0.0.1:61838] client disconnect
+[22:01:47.467][127.0.0.1:61824] Server TLS handshake failed. connection closed
+[22:01:47.467][127.0.0.1:61824] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:47.468][127.0.0.1:61824] server disconnect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:47.475][127.0.0.1:61824] Client TLS handshake failed. The client may not trust the proxy's certificate for cdp.cloud.unity3d.com (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:47.476][127.0.0.1:61824] client disconnect
+[22:01:48.187][127.0.0.1:61841] client connect
+[22:01:48.262][127.0.0.1:61841] server connect android.googleapis.com:443 (172.217.118.4:443)
+[22:01:48.778][127.0.0.1:61841] Client TLS handshake failed. The client does not trust the proxy's certificate for android.googleapis.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:48.778][127.0.0.1:61841] client disconnect
+[22:01:48.779][127.0.0.1:61841] server disconnect android.googleapis.com:443 (172.217.118.4:443)
+[22:01:48.858][127.0.0.1:61843] client connect
+[22:01:48.933][127.0.0.1:61843] server connect reminders-pa.googleapis.com:443 (172.217.114.4:443)
+[22:01:49.254][127.0.0.1:61845] client connect
+[22:01:49.357][127.0.0.1:61843] Client TLS handshake failed. The client does not trust the proxy's certificate for reminders-pa.googleapis.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:49.358][127.0.0.1:61843] client disconnect
+[22:01:49.359][127.0.0.1:61843] server disconnect reminders-pa.googleapis.com:443 (172.217.114.4:443)
+[22:01:49.619][127.0.0.1:61845] server connect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:49.705][127.0.0.1:61845] Client TLS handshake failed. The client may not trust the proxy's certificate for cdp.cloud.unity3d.com (OpenSSL Error([('SSL routines', '', 'tlsv1 alert access denied')]))
+[22:01:49.706][127.0.0.1:61845] client disconnect
+[22:01:49.707][127.0.0.1:61845] server disconnect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:01:58.213][127.0.0.1:61853] client connect
+[22:01:58.268][127.0.0.1:61853] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.276][127.0.0.1:61855] client connect
+[22:01:58.318][127.0.0.1:61853] Server TLS handshake failed. connection closed
+[22:01:58.318][127.0.0.1:61853] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:58.319][127.0.0.1:61853] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.329][127.0.0.1:61853] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:58.329][127.0.0.1:61853] client disconnect
+[22:01:58.339][127.0.0.1:61857] client connect
+[22:01:58.345][127.0.0.1:61855] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.392][127.0.0.1:61857] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.403][127.0.0.1:61855] Server TLS handshake failed. connection closed
+[22:01:58.404][127.0.0.1:61855] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:58.405][127.0.0.1:61855] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.410][127.0.0.1:61855] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:58.412][127.0.0.1:61855] client disconnect
+[22:01:58.419][127.0.0.1:61859] client connect
+[22:01:58.439][127.0.0.1:61857] Server TLS handshake failed. connection closed
+[22:01:58.440][127.0.0.1:61857] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:58.440][127.0.0.1:61857] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.448][127.0.0.1:61857] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:58.448][127.0.0.1:61857] client disconnect
+[22:01:58.474][127.0.0.1:61859] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.525][127.0.0.1:61859] Server TLS handshake failed. connection closed
+[22:01:58.525][127.0.0.1:61859] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:01:58.526][127.0.0.1:61859] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:01:58.535][127.0.0.1:61859] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:01:58.535][127.0.0.1:61859] client disconnect
+[22:02:19.265][127.0.0.1:61880] client connect
+[22:02:19.337][127.0.0.1:61880] server connect cdp.cloud.unity3d.com:443 (34.107.172.168:443)
+[22:02:28.338][127.0.0.1:61892] client connect
+[22:02:28.395][127.0.0.1:61892] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:02:28.420][127.0.0.1:61894] client connect
+[22:02:28.449][127.0.0.1:61892] Server TLS handshake failed. connection closed
+[22:02:28.449][127.0.0.1:61892] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[22:02:28.450][127.0.0.1:61892] server disconnect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:02:28.456][127.0.0.1:61892] Client TLS handshake failed. The client does not trust the proxy's certificate for mediation-tracking.unityads.unity3d.com (OpenSSL Error([('SSL routines', '', 'tls alert certificate unknown')]))
+[22:02:28.456][127.0.0.1:61892] client disconnect
+[22:02:28.462][127.0.0.1:61896] client connect
+[22:02:28.476][127.0.0.1:61894] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:02:28.521][127.0.0.1:61896] server connect mediation-tracking.unityads.unity3d.com:443 (34.107.197.81:443)
+[22:02:28.525][127.0.0.1:61894] Server TLS handshake failed. connection closed
+[22:02:28.526][127.0.0.1:61894] Unable to establish TLS connection with server (connection closed). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.C:\Users\okokok\AppData\Local\Programs\Python\Python312\Lib\site-packages\OpenSSL\crypto.py:813: CryptographyDeprecationWarning: Parsed a serial number which wasn't positive (i.e., it was negative or zero), which is disallowed by RFC 5280. Loading this certificate will cause an exception in a future release of cryptography.
+  return load_der_x509_certificate(der)
